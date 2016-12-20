@@ -1,16 +1,19 @@
 #90 Years of the Harvard Business Review
 
-![HBR 90 years visualization](/hbr.jpg "HBR 90 years visualization")
+[![HBR 90 years visualization](/hbr.jpg "HBR 90 years visualization")](/hbr.png)
 
 -> [Open the the high def picture](/hbr.png)  
 
 `This is a visualization of 90 years of Harvard Business Review, by text mining all abstracts from the articles published in its columns *from 1922 to 2012*.`  
 
-Making this visualization, we were struck to see emerge *landmarks from American history*: vocabulary related to the development of the Federal government in the 1920s, the New Deal, World War II and its aftermath, the social movements of the Sixties followed by the stagflation in the 1970s and the intensifying competition with Japan in the 1980s, up to the development of the knowledge economy in the 1990s and 2000s.  
+##How to read the poster?
+The bottom of the poster shows the oldest issues of the HBR: the vocabulary used in 1922 onwards. Then, going up, we move to the present, in 5 years intervals (shown in blue).  
+
+Making this visualization, we were struck to see *landmarks from American history* emerge: vocabulary related to the development of the Federal government in the 1920s, then the New Deal, then World War II and its aftermath, the social movements of the Sixties followed by the stagflation in the 1970s and the intensifying competition with Japan in the 1980s, up to the development of the knowledge economy in the 1990s and 2000s.  
 
 This work is a collaboration between Clement Levallois and Valerie Alloix, in 2012. At the time, Clement was a post-doc in sociology of science at Erasmus University Rotterdam and Valerie was a freelance programmer specialized in data visualization and game development.  
 
-*Our goal was to reveal the connection between business and society* in the historical record of the HBR. Our corpus was based on the abstracts from articles, editorials and opinion pieces available in the dataset. This selection was refined by leaving out the articles mentioning "fictional case" or "workshop event", as we found they were related to educational initiatives not of direct concern.  
+*Our goal was to reveal the connection between business and society in the historical record of the HBR*. Our corpus was based on the abstracts from articles, editorials and opinion pieces available in the dataset. This selection was refined by leaving out the articles mentioning "fictional case" or "workshop event", as we found they were related to educational initiatives not of direct concern.  
 
 We used a modified version of Clement's cowo software (https://github.com/seinecle) to process these texts in a number of steps: merging the singular and plural forms of terms ("lemmatization"), then extensive removal of the most common terms from the English language (based on a list of 5000 frequent terms), detection of terms composed of multiple words ("n-gram detection"), to finally arrive at the identification of the 10 most frequent terms for each year. Years preceding 2000 were grouped in 5 years as the HBR published less issues then.  
 
